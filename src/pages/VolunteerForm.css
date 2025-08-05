@@ -1,0 +1,235 @@
+.volunteer-bg {
+  /* min-height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.volunteer-card {
+  background: #a94c46;
+  border-radius: 30px;
+  box-shadow: 0 6px 32px rgba(212, 81, 81, 0.915);
+  display: flex;
+  width: 92vw;
+  max-width: 1100px;
+  min-height: 530px;
+  margin-top: 40px;
+  overflow: hidden;
+}
+
+.volunteer-img-section {
+  background: #fff;
+  flex: 1.1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  padding: 0 0 0 0;
+  min-width: 270px;
+}
+
+.volunteer-hero-img {
+  border-radius: 0 0 180px 180px;
+  width: 100%;
+  max-width: 380px;
+  min-width: 220px;
+  margin-bottom: -18px;
+  margin-top: 0;
+  height: 270px;
+  object-fit: cover;
+  box-shadow: 0 8px 22px rgba(0,0,0,.07);
+}
+
+.volunteer-inspire-text {
+  padding: 28px 19px 47px 19px;
+  text-align: center;
+  color: #a94c46;
+}
+
+.volunteer-inspire-text h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 2.1rem;
+  font-weight: 800;
+}
+.volunteer-highlight {
+  color: #ee5353;
+}
+
+.volunteer-inspire-text p {
+  margin: 0;
+  font-size: 1.09rem;
+  font-weight: 500;
+}
+
+.volunteer-form-section {
+  flex: 1.8;
+  background: #a94c46;
+  padding: 40px 42px 32px 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.volunteer-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  margin: 0 0 24px 0;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.volunteer-form-fields {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4px;
+}
+
+.form-group-full {
+  flex: 2;
+}
+
+label {
+  font-size: 1.04rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #fff;
+  letter-spacing: 0.01em;
+}
+
+input, select, textarea {
+  background: #fff;
+  color: #222;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 13px;
+  font-size: 1.04rem;
+  margin-bottom: 0;
+  font-family: inherit;
+  font-weight: 500;
+  outline: none;
+  box-shadow: 0 1px 7px rgba(0,0,0,0.04);
+  transition: border 0.15s;
+}
+
+input:focus, select:focus, textarea:focus {
+  border: 2px solid #ee5353;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.volunteer-btn {
+  padding: 15px 40px;
+  border-radius: 11px;
+  outline: none;
+  border: none;
+  background: #111;
+  color: #fff;
+  font-size: 1.19rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+.volunteer-btn:hover {
+  background: #fff;
+  color: #ee5353;
+  box-shadow: 0px 0px 10px black;
+}
+
+.volunteer-thankyou {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 40px;
+}
+
+.volunteer-thankyou span {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: 14px;
+  color: #ffe3da;
+}
+.volunteer-thankyou p {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 950px) {
+  .volunteer-card {
+    flex-direction: column;
+    min-height: unset;
+    max-width: 460px;
+    width: 97vw;
+  }
+  .volunteer-img-section {
+    min-width: unset;
+    align-items: center;
+    padding: 0;
+    border-radius: 30px 30px 0 0;
+  }
+  .volunteer-hero-img {
+    border-radius: 0 0 170px 170px;
+    width: 85%;
+    margin-bottom: -12px;
+    height: 140px;
+    max-width: 330px;
+  }
+  .volunteer-inspire-text {
+    padding: 20px 12px 19px 12px;
+  }
+  .volunteer-title {
+    font-size: 1.21rem;
+    margin: 0 0 15px 0;
+  }
+  .volunteer-form-section {
+    padding: 23px 10px 20px 10px;
+  }
+  .form-row { flex-direction: column; gap: 0; }
+}
+
+@media (max-width: 520px){
+  .volunteer-bg {
+    padding: 3vw 0;
+  }
+  .volunteer-card {
+    border-radius: 10px;
+    width: 99vw;
+    margin: 9vw 0 14vw 0;
+  }
+  .volunteer-form-section {
+    padding: 9vw 2vw;
+  }
+  .volunteer-title {
+    font-size: 1.09rem;
+  }
+  .volunteer-hero-img {
+    height: 90px;
+    border-radius: 0 0 80px 80px;
+  }
+}
+
+::-webkit-input-placeholder { color: #aaa; }
+::-moz-placeholder { color: #aaa; }
+:-ms-input-placeholder { color: #aaa; }
+::placeholder { color: #aaa; }
